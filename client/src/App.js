@@ -44,11 +44,11 @@ export default function App() {
           ]
         }
       />
-      <Route path="/MovieList">
+      <Route exact path="/">
         <MovieList movies={movieList} />
       </Route>
 
-      <Route path="/Movie">
+      <Route path="/Movie/:id">
         <Movie id={saved} />
       </Route>
     </div>
